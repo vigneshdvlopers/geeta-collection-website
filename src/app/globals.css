@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-primary: #E53E5A;
+  --color-dark-navy: #2D3B4E;
+  --color-white: #FFFFFF;
+  --color-light-pink: #FDF2F8;
+  --color-text-dark: #1F2937;
+  --color-text-medium: #6B7280;
+  --color-gold: #F59E0B;
+
+  --font-sans: 'Inter', sans-serif;
+
+  --text-hero-headline: 72px;
+  --text-section-heading: 48px;
+  --text-product-title: 24px;
+  --text-body: 16px;
+  --text-button: 16px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --radius-card: 12px;
+  --radius-button: 12px;
+
+  --shadow-card: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-text-dark);
+    background-color: var(--color-white);
+  }
+
+  body {
+    line-height: 1.5;
+    font-size: var(--text-body);
+    font-weight: var(--font-weight-regular);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: var(--text-hero-headline);
+  }
+
+  h2 {
+    font-size: var(--text-section-heading);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
