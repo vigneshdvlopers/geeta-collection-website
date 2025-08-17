@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Navigation from "@/components/sections/navigation"
 
 interface Product {
   id: string
@@ -233,8 +234,10 @@ function CategoryCard({ category }: { category: Category }) {
 export default function CollectionPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-pink-50 to-rose-50">
+      <section className="py-20 px-6 bg-gradient-to-r from-pink-50 to-rose-50 mt-20">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Our Collection

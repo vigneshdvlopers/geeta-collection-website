@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Navigation from "@/components/sections/navigation";
 
 interface FormData {
   name: string;
@@ -108,8 +109,10 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#E53E5A] to-[#2D3B4E] py-24">
+      <section className="bg-gradient-to-r from-[#E53E5A] to-[#2D3B4E] py-24 mt-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Contact Us

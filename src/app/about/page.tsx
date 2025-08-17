@@ -3,12 +3,15 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Award, Users, Calendar, Heart, Shield, Sparkles, Trophy } from 'lucide-react'
+import Navigation from "@/components/sections/navigation"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-r from-primary/20 to-primary/10">
+      <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-r from-primary/20 to-primary/10 mt-20">
         <div className="absolute inset-0 bg-[url('https://readdy.ai/api/search-image?query=elegant%20traditional%20indian%20boutique%20interior%20with%20beautiful%20sarees%20and%20traditional%20clothing%20displays%20soft%20warm%20lighting%20luxury%20setting&width=1200&height=600')] bg-cover bg-center opacity-20"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <h1 className="text-[72px] font-bold text-text-dark mb-6 leading-tight">
